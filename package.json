@@ -1,0 +1,25 @@
+{
+  "name": "details-summary-tiptap-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmany/details-summary-tiptap-extension.git"
+  },
+  "keywords": [
+    "TipTap"
+  ],
+  "author": "vladmany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladmany/details-summary-tiptap-extension/issues"
+  },
+  "homepage": "https://github.com/vladmany/details-summary-tiptap-extension#readme",
+  "dependencies": {
+    "@tiptap/core": "^2.0.0-beta.220"
+  }
+}
