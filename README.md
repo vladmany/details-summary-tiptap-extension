@@ -1,12 +1,16 @@
 # Details Summary TipTap Extension
 
 ## Usage (Vue.js):
-### 1. Import extension
+
+### 1. Install extension
+`npm install details-summary-tiptap-extension`
+
+### 2. Import extension
 ```js
 import DetailsSummary from 'details-summary-tiptap-extension'
 ```
 
-### 2. Add extension to your TipTap Editor
+### 3. Add extension to your TipTap Editor
 ```js
 extensions: [
     // ...
@@ -14,7 +18,7 @@ extensions: [
 ]
 ```
 
-### 3. Create new button
+### 4. Create new button
 ```html
 <div v-if="editor">
     <button @click="editor.commands.toggleDetails()">
