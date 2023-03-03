@@ -1,5 +1,6 @@
 import { Extension } from '@tiptap/core'
 import { Details, Summary } from "./DetailsSummaryNodes";
+import HeadingExtender from "./HeadingExtender";
 import styles from './style.css';
 
 export default Extension.create({
@@ -8,7 +9,8 @@ export default Extension.create({
 	addExtensions() {
 		return [
 			Details,
-			Summary
+			Summary,
+			HeadingExtender
 		];
 	},
 
@@ -41,25 +43,6 @@ export default Extension.create({
 			{
 				types: ['summary'],
 				attributes: {
-					expanded: {
-						default: false,
-						renderHTML: attributes => {
-							if (attributes.expanded) {
-								return {
-									'aria-expanded': true
-								}
-							}
-
-							return {}
-						},
-						parseHTML: element => {
-							if (element.getAttribute('aria-expanded') === 'true') {
-								return {
-									expanded: true
-								}
-							}
-						}
-					},
 					class: {
 
 					}
